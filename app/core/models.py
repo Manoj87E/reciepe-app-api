@@ -24,6 +24,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager()
 
-    USER_NAME = "email"
+    USERNAME_FIELD = "email"
 
 
