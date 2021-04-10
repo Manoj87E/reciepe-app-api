@@ -1,6 +1,7 @@
 from django.test import TestCase, Client
-from django.congtrib.auth import get_user_model
+from django.contrib.auth import get_user_model
 from django.urls import reverse
+
 
 class AdminSiteTest(TestCase):
 
@@ -12,7 +13,7 @@ class AdminSiteTest(TestCase):
         )
         self.client.force_login(self.admin_user)
         self.user = get_user_model().objects.create_user(
-            email='manoj@manoj2161.com',
+            email='manoj1@manoj2161.com',
             password='passwd123',
             name='manoj'
         )
